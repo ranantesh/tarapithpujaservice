@@ -141,10 +141,24 @@ h6 {
 
 .pujaimage{
   margin: 20px; 
-  width: 30%; /* Adjust the width as needed */
+  width: 250px; /* Adjust the width as needed */
   height: auto;
 }
-
+.pujaimage1{
+  margin: 20px; 
+  width: 200px; /* Adjust the width as needed */
+  height: auto;
+  margin-left: auto;
+  display: block;
+}
+@media (max-width: 768px) {
+  .pujaimage1 {
+    margin: 20px auto; /* Auto for vertical margin, centering horizontally */
+    width: 200px; /* Adjust the width as needed */
+    height: auto;
+    display: block;
+  }
+}
 .adimage{
   margin: 20px; 
   width: 70%; /* Adjust the width as needed */
@@ -403,7 +417,7 @@ h6 {
 }
 
 #hero p {
-  width: 80%;
+  width: 100%;
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
   color: #fff;
@@ -1619,7 +1633,7 @@ section {
   position: fixed;
   top: 0;
   right: 0;
-  height: 100%;
+  height: 70%;
   width: 20%;
   background-color: #f8f9fa; /* Adjust the background color as needed */
   display: flex;
@@ -1649,6 +1663,11 @@ section {
   margin-top: 15vh; /* 15% of the viewport height */
 }
 
+@media (max-width: 767px) {
+  .pre-puja-section {
+    width: 98%;
+  }
+}
 .bordered-box {
   padding: 20px; /* Adjust the padding as needed */
   box-sizing: border-box; /* Include padding and border in the total width */
